@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROWEB</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="nav__elements">
+                <a href="#header">
+                    <img src="./img/nav__logo.svg" alt="">
+                </a>
+                <div class="nav__links">
+                    <a href="#about-me">Обо мне</a>
+                    <a href="#skils">Навыки</a>
+                    <a href="#works">Работы</a>
+                    <a href="#contakts">Контакты</a>
+                </div>
+                <div class="nav__social-links">
+                    <a href="https://wa.me/905356651593" class="link-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/assfrghgv" class="link-telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+   <header id="header">
+        <div class="container">
+            <div class="header__elements">
+                <div class="header__info">
+                    <h1>
+                        WEB - Разработчик
+                        <br>
+                        С 12 лет
+                    </h1>
+                    <hr>
+                    <p>
+                        Всё верно! Это не шутка!
+                    </p>
+                    <a href="#about-me">Подробнее</a>
+                </div>
+                <img src="./img/header.png" alt="">
+            </div>
+    </header>
+
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <h2>Обо мне</h2>
+            <div class="about-me__elements">
+                <img src="./img/about.png" alt="">
+                <p>
+                    Я начал изучать программирование в 12 лет, и теперь мне 14, но я уже достиг значительных
+                    успехов и хочу пригласить вас для сотрудничество в создании веб-приложений. Я очень стараюсь и не
+                    перестаю удивляться тому, что можно создать с помощью кода. Мой талант и упорство доказывают, что
+                    возраст не является препятствием для достижения своих целей.
+                    <br>
+                    <br>
+                    Я уверен, что будущее будет ярким и успешным, и я надеюсь, что мы сможем вместе создавать отличные
+                    веб-приложения.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skils" class="skils">
+        <div class="container">
+            <h2>Навыки</h2>
+            <div class="skils__list">
+                <div class="skils__card">
+                    <div>
+                        HTML
+                    </div>
+                    <p>
+                        Я хорошо разбираюсь в HTML, могу создавать веб-страницы, структурировать контент и улучшать
+                        дизайн с помощью HTML5.
+                    </p>
+                </div>
+                <div class="skils__card">
+                    <div>CSS</div>
+                    <p>
+                        Я хорошо разбираюсь в CSS, могу управлять макетом, типографикой и цветовой схемой для создания
+                        визуально привлекательных интерфейсов.
+                    </p>
+                </div>
+                <div class="skils__card">
+                    <div>JS</div>
+                    <p>
+                        Я хорошо разбираюсь в JavaScript, могу создавать динамические веб-страницы, управлять HTML/CSS и
+                        улучшать функциональность
+                    </p>
+                </div>
+                <div class="skils__card">
+                    <div>FIGMA</div>
+                    <p>
+                        Я хорошо разбираюсь в Figma, могу создавать пользовательские интерфейсы, макеты, прототипы и
+                        высококачественные проекты.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="works" id="works">
+        <div class="container">
+            <h2>Работы</h2>
+            <div class="works__elements">
+                <a class="works__link" href="https://nikitakadilnikov.github.io/TOP3/car.html">
+                    <div class="works__wrapper"></div>
+                    <div class="works__text">TOP 3</div>
+                </a>
+
+                <a class="animals__link" href="https://nikitakadilnikov.github.io/TOP3/enimals.html">
+                    <div class="works__wrapper"></div>
+                    <div class="works__text">TOP 3</div>
+                </a>
+
+                <a class="flowers__link" href="https://nikitakadilnikov.github.io/TOP3/flowers.html">
+                    <div class="works__wrapper"></div>
+                    <div class="works__text">TOP 3</div>
+                </a>
+
+                <a class="index__link" href="https://nikitakadilnikov.github.io/TOP3/index.html">
+                    <div class="works__wrapper"></div>
+                    <div class="works__text">TOP 3</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contakts" id="contakts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Оставьте заявку и я свяжусь с вами в течении дня!</p>
+            <hr>
+            <form action="">
+                <label for="name">Ваше имя</label>
+                <input type="text" placeholder="Введите имя" id="name">
+                <label for="email">Ваша почта</label>
+                <input type="text" placeholder="Введите почту" id="email">
+                <label for="comment">Комментарий</label>
+                <textarea name="" id="comment" placeholder="Комментарий"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+   <footer>
+        <div class="container">
+            <div class="footer__elements">
+                <a href="#header">
+                    <img src="./img/nav__logo.svg" alt="">
+                </a>
+                <p>Все права защищены и принадлежат Никите Кадильнекову</p>
+                <div class="nav__social-links">
+                    <a href="https://wa.me/905356651593" class="link-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://t.me/assfrghgv" class="link-telegram"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
