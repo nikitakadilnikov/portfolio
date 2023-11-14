@@ -1,0 +1,226 @@
+header {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, black, rgb(95, 8, 95));
+    background-size: 1000%;
+    background-repeat: no-repeat;
+    animation: headerbg 10s infinite alternate-reverse linear;
+}
+
+@keyframes headerbg {
+    0% {
+        background-position: top 30% left 30%;
+    }
+
+    100% {
+        background-position: bottom 30% right 30%;
+    }
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 2000px;
+    margin: 0px 0px 0px 0px;
+}
+
+nav {
+    z-index: 10;
+    box-shadow: 0px 0px 25px rgba(243, 187, 213, 0.486);
+    padding: 4px 0px;
+    width: 100%;
+    position: fixed;
+    border-radius: 0px 0px 20px 20px;
+    height: auto;
+    background-color: black;
+}
+
+.container {
+    padding: 0px 20px 0px 20px;
+    margin: 0 auto 0 auto;
+    max-width: 1340px;
+}
+
+.nav__elements {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.nav__links {
+    gap: 64px;
+    display: flex;
+}
+
+.nav__social-links {
+    gap: 20px;
+    display: flex;
+}
+
+nav a {
+    transition: 0.5s;
+    text-decoration: none;
+    color: rgb(243, 187, 213);
+}
+
+nav a:hover {
+    color: orange;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(120deg, black, rgb(95, 8, 95));
+    border-radius: 4px;
+}
+
+nav .link-whatsapp {
+    color: rgb(100, 187, 13);
+}
+
+nav .link-telegram {
+    color: rgb(60, 60, 146);
+}
+
+.header__elements {
+    align-items: center;
+    gap: 60px;
+    display: flex;
+}
+
+h1 {
+    color: rgb(243, 187, 213);
+    font-size: 56px;
+}
+
+hr {
+    border: none;
+    border-radius: 2px;
+    height: 2px;
+    background-color: rgb(243, 187, 213);
+}
+
+header p {
+    color: rgb(243, 187, 213);
+    font-size: 24px;
+}
+
+header a {
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.5s;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    color: rgb(243, 187, 213);
+    background-color: transparent;
+    border: 1px solid rgb(243, 187, 213);
+    padding: 16px 32px 16px 32px;
+    border-radius: 10px;
+}
+
+header a:hover {
+    color: rgb(60, 60, 146);
+    background-color: rgb(243, 187, 213);
+}
+
+.about-me__elements {
+    align-items: end;
+    gap: 110px;
+    display: flex;
+}
+
+h2 {
+    margin: 0px 0px 60px 0px;
+    color: rgb(95, 8, 95);
+    font-size: 40px;
+}
+
+.about-me p {
+    line-height: 26px;
+    padding: 24px 32px 24px 32px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px rgba(95, 8, 95, 0.404);
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 80px 0px 80px 0px;
+}
+
+.skils h2 {
+    text-align: center;
+}
+
+.skils__card {
+    max-width: 220px;
+}
+
+.skils__card div {
+    box-shadow: 0px 0px 16px rgb(243, 187, 213);
+    display: flex;
+    font-weight: 900;
+    font-size: 36px;
+    color: rgb(243, 187, 213);
+    border-radius: 20px;
+    background: linear-gradient(120deg, black, rgb(95, 8, 95));
+    width: 220px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+    background-size: 1000%;
+    background-repeat: no-repeat;
+    animation: headerbg 10s infinite alternate-reverse linear, skils__card 2s infinite alternate-reverse ease-in-out;
+}
+
+.skils__card p {
+    line-height: 26px;
+}
+
+@keyframes skils__card {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.skils__list {
+    justify-content: space-between;
+    display: flex;
+}
+
+.skils__card:nth-child(2) div {
+    animation-delay: 0s, 2s;
+}
+
+.skils__card:nth-child(4) div {
+    animation-delay: 0s, 2s;
+}
+.works h2{
+    text-align: center;
+}
+.works__link{
+    transition: 0.5s;
+    width: 280px;
+    height: 280px;
+    background-image: url(./img/TOP3-BG.png);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: chartreuse;
+    background-position: center;
+}
+.works__link:hover{
+    background-size: 100%;
+}
