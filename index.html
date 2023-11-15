@@ -11,7 +11,7 @@
     <title>PROWEB</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
-    <script src="./js/script.js" defer></script>
+ 
 </head>
 
 <body>
@@ -150,9 +150,12 @@
             <h2>Контакты</h2>
             <p>Оставьте заявку и я свяжусь с вами в течении дня!</p>
             <hr>
-            <form action="">
+            <form>
+                <div class="wrapper">
+                    Ваша заявка отправлена
+                </div>
                 <label for="name">Ваше имя</label>
-                <input type="text" placeholder="Введите имя" id="name">
+                <input type="text" placeholder="Введите имя" id="name" required>
                 <label for="email">Ваша почта</label>
                 <input type="text" placeholder="Введите почту" id="email">
                 <label for="comment">Комментарий</label>
@@ -177,6 +180,8 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+    <script src="./js/script.js" ></script>
 </body>
 
 </html>
